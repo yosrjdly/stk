@@ -1,9 +1,9 @@
-"use client"
-
+"use client";
 
 import React, { useState } from 'react';
 import { Button, TextField, Select, MenuItem, ToggleButton, ToggleButtonGroup } from '@mui/material';
-import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'; // Correct import
 
 const FilterComponent: React.FC = () => {
   const [dateRange, setDateRange] = useState<{ startDate: Date | null; endDate: Date | null }>({
